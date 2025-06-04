@@ -10,15 +10,17 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-tertiary">
         <div class="container">
-            <a href="" class="navbar-brand">QR Code Generate</a>
+            <a href="" class="navbar-brand"><b>QR Code Generate</b></a>
         </div>
     </nav>
     <!-- qr code -->
-  <div class ="container mt-5 align-items-center text-center">
+  <div class ="container mt-3 align-items-center text-center">
      <h2> {{ res_name }}</h2>
-     <img src="{{ qr_url }}" alt="QR Code" style="border: #000000;">
+     <br>
+     <img src="{{ qr_url }}" alt="QR Code" style="width: 390px; height: 390px; border: 1px solid #000000;">
+
      <div>
-        <a href="{{ qr_url }}" class="btn btn-primary" download="{{ file_name }}">Download QR Code</a>
+        <a href="{{ qr_url }}" class="btn btn-primary mt-3" download="{{ file_name }}">Download QR Code</a>
      </div>
   </div>
 
